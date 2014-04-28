@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>531</width>
+    <height>345</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,14 +17,111 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>70</y>
-      <width>101</width>
-      <height>16</height>
+      <x>120</x>
+      <y>40</y>
+      <width>211</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hello World</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#00aa00;&quot;&gt;Welcome to LEAVES COLLAGE!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	background-color: rgb(232, 232, 137);
+	font: 75 italic 9pt &quot;Aharoni&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="regButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(232, 232, 137);
+	font: 75 italic 9pt &quot;Aharoni&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Register</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="jigsawButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>190</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(232, 232, 137);
+	font: 75 italic 9pt &quot;Aharoni&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>jigsaw</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(232, 232, 137);
+	font: 75 italic 9pt &quot;Aharoni&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>leaves overlook</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>130</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	background-color: rgb(232, 232, 137);
+	font: 75 italic 9pt &quot;Aharoni&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Log in</string>
     </property>
    </widget>
   </widget>
@@ -33,8 +130,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
-     <height>22</height>
+     <width>531</width>
+     <height>23</height>
     </rect>
    </property>
   </widget>
@@ -50,5 +147,75 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>loginButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createDialog1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>23</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>regButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createDialog2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openwebpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>508</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>createDialog1()</slot>
+  <slot>createDialog2()</slot>
+  <slot>openwebpage()</slot>
+ </slots>
 </ui>

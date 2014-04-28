@@ -1,5 +1,5 @@
-#include "indexwindow.h"
-#include "ui_indexwindow.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include <QtGui>
 #include <QPalette>
 #include "regwindow.h"
