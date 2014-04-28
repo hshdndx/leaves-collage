@@ -212,10 +212,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>jigsawButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>collageDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>createDialog1()</slot>
   <slot>createDialog2()</slot>
   <slot>openwebpage()</slot>
+  <slot>collageDialog()</slot>
  </slots>
 </ui>
